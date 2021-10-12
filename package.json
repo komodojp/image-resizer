@@ -1,0 +1,30 @@
+{
+  "name": "img-resizer",
+  "version": "1.0.0",
+  "main": "build/index.js",
+  "description": "Resize and Optimize image on-the-fly",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon -L  -e ts --watch ./src --exec ts-node --transpile-only ./src/index.ts",
+    "build": "tsc",
+    "lint": "prettier --config .prettierrc --ignore-path .prettierignore --write \"**/*.{ts,js,json,md}\"",
+    "test:lint": "prettier --config .prettierrc --ignore-path .prettierignore --check \"**/*.{ts,js,json,md}\""
+  },
+  "dependencies": {
+    "axios": "^0.22.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "sharp": "^0.29.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/morgan": "^1.9.3",
+    "@types/node": "^16.10.3",
+    "@types/sharp": "^0.29.2",
+    "nodemon": "^2.0.13",
+    "prettier": "^2.4.1",
+    "ts-node": "^10.3.0",
+    "typescript": "^4.4.3"
+  }
+}
